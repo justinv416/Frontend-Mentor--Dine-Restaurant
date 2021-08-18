@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 62.5%;
     font-family: var(--pf-spartan);
 }
 
@@ -26,10 +26,19 @@
     --fw-bold: 700;
 }
 
+/*Global*/
 body {
     max-width: 1440px;
     margin: auto;
     position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
 }
 
 #hero {
@@ -58,14 +67,14 @@ body {
 
 .hero-heading {
     font-weight: 300;
-    font-size: 4rem;
+    font-size: 6.4rem;
     letter-spacing: -0.8px;
     line-height: 72px;
 }
 
 .hero-paragraph {
     margin: 24px 0 42px 0;
-    font-size: 1.125rem;
+    font-size: 1.8rem;
     line-height: 30px;
     letter-spacing: -0.22px;
     width: 86.99%;
@@ -155,11 +164,11 @@ body {
 }
 
 .copy-heading {
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 .copy-paragraph {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 30px;
     letter-spacing: -0.22px;
 }
@@ -226,7 +235,200 @@ body {
 
 .highlights-content {
     color: var(--sc-white);
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     width: 1110px;
     height: 441px;
+    display: flex;
+    position: absolute;
+    left: 165px;
+    top: 207.5px;
 }
+
+.highlights-content-wrap {
+    height: 225px;
+    width: 445px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-items-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-top: 49px;
+    margin-left: 125px;
+}
+
+.menu-heading {
+    font-size: 1.8rem;
+}
+
+.menu-paragraph {
+    font-size: 1.5rem;
+}
+
+.menu-item {
+    display: flex;
+}
+
+.menu-item:not(:last-child) {
+    /* margin-bottom: 49px; */
+}
+
+.menu-copy {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.line-divider {
+    width: 540px;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+/* Slider */
+.background-shape-three {
+    position: absolute;
+    width: 895px;
+    height: 320px;
+    left: 10px;
+    top: 2981px;
+    background: #5C6779;
+    mix-blend-mode: normal;
+    opacity: 0.08;
+    border-radius: 100px 0px 0px 0px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.line-graphic-two {
+    position: absolute;
+    width: 160px;
+    height: 76px;
+    left: 125px;
+    top: 3114px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.slider-container {
+    width: 1110px;
+    height: 600px;
+    background-color: var(--sc-white);
+    position: absolute;
+    left: 165px;
+    top: 3152px;
+    display: flex;
+}
+
+.slider-container-copy {
+    margin-left: 125px;
+}
+
+.slider-container-copy-button {
+    width: 245px;
+    height: 64px;
+    background-color: var(--pc-cod-gray);
+    color: var(--sc-white);
+    font-size: 1.4rem;
+    margin-bottom: 7.8rem;
+}
+
+.slider-container-copy-heading {
+    margin: 40px 0 16px 0;
+}
+
+.slider-container-copy-paragraph {
+    margin-bottom: 3.2rem;
+}
+
+.slider-copy-item {
+    list-style-type: none;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.slider-copy-item:hover {
+    color: var(--pc-cod-gray);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.location-paragraph {
+    font-size: 1.4rem;
+    color: var(--sc-white);
+}
+
+#footer-banner {
+    position: absolute;
+    width: 1440px;
+    height: 240px;
+    left: 0px;
+    top: 3912px;
+    z-index: 1;
+}
+
+.footer-banner-image {
+    position: relative;
+}
+
+.footer-banner-button {
+    width: 245px;
+    height: 64px;
+    background-color: transparent;
+    color: var(--sc-white);
+    font-size: 1.4rem;
+    border: 2px solid var(--sc-white);
+    position: absolute;
+    top: 88px;
+    right: 165px;
+}
+
+.footer-banner-heading {
+    color: var(--sc-white);
+    font-size: 4rem;
+    position: absolute;
+    left: 165px;
+    top: 92px;
+}
+
+#footer {
+    width: 1440px;
+    height: 240px;
+    background-color: var(--pc-cod-gray);
+    position: absolute;
+    left: 0px;
+    top: 4152px;
+}
+
+.footer-logo {
+    width: 103.42px;
+    height: 40px;
+}
+
+.footer-wrap {
+    width: 1110px;
+    height: 84px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 165px;
+    top: 78px;
+}
+
+/*
+
+todo:
+
+1. convert all units to rem
+2. make site responsive
+3. convert all w/h to % using target / context formula
+4. convert absolute positioning back to normal position for document
+
+*/
