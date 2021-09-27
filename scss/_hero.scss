@@ -1,0 +1,114 @@
+
+.logo {
+    width: 10.3rem;
+    height: 4rem;
+    position: absolute;
+    top: 6.5rem;
+    @media screen and (max-width: $tablet-l) {
+        position: initial;
+    } 
+}
+
+#hero {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+
+    &__bg {
+        width: 100%;
+        z-index: -1;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        position: absolute;
+        left: 16.5rem;
+        top: 0rem;
+        // background-color: blueviolet;
+
+        @media screen and (max-width: $tablet-l) {
+            width: 68.9rem;
+            // height: 50%;
+            margin: auto;
+            left: 4rem;
+            right: 4rem;
+            top: 37.4rem;
+            bottom: 21.6rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        @media screen and (max-width: $tablet-s) {
+            width: 90%;
+        } 
+        
+        @media screen and (max-width: $mobile-l) {
+            width: 32.7rem;
+            left: 0;
+            right: 0;
+        }
+
+        &__heading {
+            margin-top: 0;
+            font-size: calc(3.2rem + (64 - 32) * ((100vw - 375px) / (1440 - 375))); 
+            letter-spacing: -0.8px;
+            line-height: 7.2rem;  
+            // background-color: bisque; 
+            margin-top: 15.8rem; 
+            width: 50%;
+            @media screen and (max-width: $tablet-l) {
+                margin-top: 3.2rem;
+                width: 70%;
+            }
+            @media screen and (max-width: $mobile-l) {
+                line-height: 4rem;
+            }
+        }
+
+        &__paragraph {
+            font-size: 1.8rem;
+            width: 50%;
+            // background-color: darkblue;
+            line-height: 3rem;
+            margin: 2.4rem 0 4.2rem 0;
+            @media screen  and (max-width: $tablet-s) {
+                width: 70%;
+                text-align: center;
+                // background-color: khaki;
+            }
+            @media screen  and (max-width: $mobile-l) {
+                width: 90%;
+                text-align: center;
+                // background-color: khaki;
+            }
+        }
+
+        &__button {
+            background: none;
+            border: 1px solid #fff;
+            color: #fff;
+            width: 24.5rem;
+            height: 6.4rem;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            font-weight: weight(semi-bold);
+            &:hover {
+                background-color: #fff;
+                color: #111;
+            }
+        }
+    }
+}
+
+//Fluid typorgraphy formula
+//font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+// h1 max: 64px min: 32px
+// calc(3.2rem + (64 - 14) * ((100vw - 375px) / (1440 - 375))); 
+
+//Need to remove absolute positioning

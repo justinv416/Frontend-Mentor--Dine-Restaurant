@@ -1,0 +1,59 @@
+.divide-pattern {
+    width: 71px;
+    height: 7px;
+}
+
+#copy-one {
+    background: url(/images/patterns/pattern-curve-top-right.svg);
+    background-size: 895px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    
+    &-container {
+        // position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // background-color: lawngreen;
+        height: auto;
+        margin: 0 16.5rem;
+        @media screen and (max-width: $tablet-l) {
+            flex-direction: column;
+        }
+    }
+    
+    &__image {
+        transform: translateY(-5rem);
+    }
+
+    &__content-container {
+        // background-color: lawngreen;
+        width: 44.5rem;
+        height: 27.3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 12.5rem;
+        @media screen and (max-width: $tablet-l) {
+            margin-left: 0;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        @media screen and (max-width: $mobile-l) {
+            width: 32.7rem;
+        }
+    }
+
+    &__content-heading {
+        color: #111;
+        font-size: 4rem;
+        font-weight: 600;
+    }
+
+    &__content-paragraph {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        color: #111;
+    }
+}

@@ -1,0 +1,50 @@
+@import './resets', './variables', './hero', './copy-one', './copy-two', './highlights';
+
+//Function for font weight
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+//Mixins
+@mixin flexBetween($direction) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+//Global 
+html {
+    font-family: 'Spartan', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-weight: weight(regular);
+    max-width: 1440px;
+    margin: auto;
+}
+
+main {
+    height: auto;
+}
+
+h1 {
+    font-weight: weight(light);
+    color: #fff;
+}
+
+h2 {
+    font-weight: weight(semi-bold);
+}
+
+h3 {
+    font-weight: weight(bold);
+}
+
+p {
+    color: #fff;
+}
+
+
+

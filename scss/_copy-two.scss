@@ -1,0 +1,53 @@
+#copy-two {
+    background: url(/images/patterns/pattern-curve-top-left.svg);
+    background-size: 895px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // background-color: lawngreen;
+        height: auto;
+        margin: 0 16.5rem;
+        @media screen and (max-width: $tablet-l) {
+            flex-direction: column;
+            flex-flow: column-reverse;
+        }
+    }
+
+    &__image {
+        margin-top: 12rem;
+    }
+
+    &__content-container {
+        // background-color: lawngreen;
+        width: 44.5rem;
+        height: 27.3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 12.5rem;
+        @media screen and (max-width: $tablet-l) {
+            margin-right: 0;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        @media screen and (max-width: $mobile-l) {
+            width: 32.7rem;
+        }
+    }
+
+    &__content-heading {
+        color: #111;
+        font-size: 4rem;
+        font-weight: 600;
+    }
+
+    &__content-paragraph {
+        font-size: 1.8rem;
+        color: #111;
+    }
+}

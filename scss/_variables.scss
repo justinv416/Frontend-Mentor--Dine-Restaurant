@@ -1,0 +1,28 @@
+//Colors:
+//Primary Colors
+$pc-beaver: #9e7f66;
+$pc-cod-grey: #111111;
+//Secondary colors
+$sc-mirage: #17192b;
+$sc-ebony-clay: #242b37;
+$sc-shuttle-gray: #5c6779;
+
+//Typography: 
+$pf-spartan: 'Spartan', sans-serif;
+
+//Font Weights
+$font-weights: (
+    "light": 300,
+    "regular": 400,
+    "semi-bold": 600,
+    "bold": 700
+);
+
+//Breakpoints
+$mobile-s: 320px;
+$mobile-m: 375px;
+$mobile-l: 426px;
+$tablet-s: 768px;
+$tablet-l: 1025px;
+$desktop-s: 1440px;
+$desktop-l: 2560px;

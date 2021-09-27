@@ -1,172 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Dine Website Challenge</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Dine Restaurant</title>
 </head>
 <body>
-  <main>
-    <section id="hero">
-      <img src="./images/homepage/hero-bg-desktop.jpg" alt="Hero Image">
-      <div class="mask"></div>
-      <img src="./images/logo.svg" alt="" class="logo">
-      <div class="hero-content">
-        <h1 class="hero-heading">Exquisite dining since 1989</h1>
-        <p class="hero-paragraph">
-          Experience our seasonal menu in beautiful country surroundings.
-          Eat the freshest produce from the comfort of out farmhouse. 
-        </p>
-        <a href=""><button class="hero-button">BOOK A TABLE</button></a>
-      </div>
-    </section>
-    <section id="enjoyable-place">
-      <div class="background-shape"></div>
-      <img class="about-image ep-image" src="./images/homepage/enjoyable-place-desktop.jpg" alt="Image of nice vista">
-      <div class="enjoyable-place-content">
-        <div class="line-shape">
-            <div class="oval"></div>
-            <div class="line-shape-line"></div>
+
+    <header id="hero">
+        <picture>
+            <source media="(max-width: 480px)" srcset="./images/homepage/hero-bg-mobile.jpg">
+            <source media="(max-width: 1025px)" srcset="./images/homepage/hero-bg-tablet.jpg">
+            <img src="./images/homepage/hero-bg-desktop.jpg" alt="" id="hero__bg">
+        </picture>
+        <div id="hero__content">
+            <img src="./images/logo.svg" alt="" class="logo">
+            <h1 id="hero__content__heading">
+                Exquisite dining since 1989
+            </h1>
+            <p id="hero__content__paragraph">
+                Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from 
+                the comfort of our farmhouse.
+            </p>
+            <button id="hero__content__button">
+                book a table
+            </button>
         </div>
-        <h2 class="copy-heading">
-          Enjoyable place for all the family
-        </h2>
-        <p class="copy-paragraph">
-          Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange 
-          a tour of the farm before your meal.
-        </p>
-      </div>
-    </section>
-    <section id="local-source">
-      <div class="local-source-content">
-        <div class="line-shape">
-            <div class="oval"></div>
-            <div class="line-shape-line"></div>
-        </div>
-        <h2 class="copy-heading">
-          The most locally sourced food
-        </h2>
-        <p class="copy-paragraph">
-          All our ingredients come directly from our farm or local fishery. So you can be sure that you’re 
-          eating the freshest, most sustainable food.
-        </p>
-      </div>
-      <img src="./images/homepage/locally-sourced-desktop.jpg" alt="Local source image" class="local-source-image">
-      <div class="background-shape-two"></div>
-      <div class="line-graphic">
-        <div class="line-one line"></div>
-        <div class="line-two line"></div>
-        <div class="line-three line"></div>
-        <div class="line-four line"></div>
-        <div class="line-five line"></div>
-        <div class="line-six line"></div>
-      </div>
-    </section>
-    <section id="highlights">
-      <div class="highlights-content">
-        <div class="highlights-content-wrap">
-          <div class="line-shape">
-            <div class="oval"></div>
-            <div class="line-shape-line"></div>
-          </div>
-          <h2 class="copy-heading">
-            A few highlights from our menu
-          </h2>
-          <p class="copy-paragraph">
-            We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. 
-            Our menu is revamped every season.
-          </p>
-        </div>
-        <div class="menu-items-wrap">
-          <div class="menu-item">
-            <img src="./images/homepage/salmon-desktop-tablet.jpg" alt="" class="menu-image">
-            <div class="menu-copy">
-              <h3 class="menu-heading">Seared Salmon Filet</h3>
-              <p class="menu-paragraph">  
-                Our locally sourced salmon served with a refreshing buckwheat summer salad.
-              </p>
+    </header>
+
+    <main>
+
+        <section id="copy-one">
+            <div id="copy-one-container">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="./images/homepage/enjoyable-place-mobile.jpg">
+                    <source media="(max-width: 1025px)" srcset="./images/homepage/enjoyable-place-tablet.jpg">
+                    <img src="./images/homepage/enjoyable-place-desktop.jpg" alt="" id="copy-one__image">
+                </picture>
+                <div id="copy-one__content-container">
+                    <img src="./images/patterns/pattern-divide.svg" alt="" class="divide-pattern">
+                    <h2 id="copy-one__content-heading">
+                        Enjoyable place for all the family
+                    </h2>
+                    <p id="copy-one__content-paragraph">
+                         Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange 
+                        a tour of the farm before your meal.
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="line-divider"></div>
-          <div class="menu-item">
-            <img src="./images/homepage/beef-desktop-tablet.jpg" alt="" class="menu-image">
-            <div class="menu-copy">
-              <h3 class="menu-heading">Rosemary Filet Mignon</h3>
-              <p class="menu-paragraph">  
-                Our prime beef served to your taste with a delicious choice of seasonal sides.
-              </p>
+        </section>
+       
+        <section id="copy-two">
+            <div id="copy-two-container">
+                <div id="copy-two__content-container">
+                    <img src="./images/patterns/pattern-divide.svg" alt="" class="divide-pattern">
+                    <h2 id="copy-two__content-heading">
+                        The most locally sourced food
+                    </h2>
+                    <p id="copy-two__content-paragraph">
+                        All our ingredients come directly from our farm or local fishery. So you can be sure that you’re 
+                        eating the freshest, most sustainable food.
+                    </p>
+                </div>
+                <picture>
+                    <source media="(max-width: 480px)" srcset="./images/homepage/locally-sourced-mobile.jpg">
+                    <source media="(max-width: 1025px)" srcset="./images/homepage/locally-sourced-tablet.jpg">
+                    <img src="./images/homepage/locally-sourced-desktop.jpg" alt="" id="copy-two__image">
+                </picture>
             </div>
-          </div>
-          <div class="line-divider"></div>
-          <div class="menu-item">
-            <img src="./images/homepage/chocolate-desktop-tablet.jpg" alt="" class="menu-image">
-            <div class="menu-copy">
-              <h3 class="menu-heading">Summer Fruit Chocolate Mousse</h3>
-              <p class="menu-paragraph">  
-                Creamy mousse combined with summer fruits and dark chocolate shavings.
-              </p>
+        </section>
+
+        <section id="highlights">
+            <div id="highlights-container">
+                <div id="highlights__content-container">
+                    <img src="./images/patterns/pattern-divide.svg" alt="" class="divide-pattern">
+                    <h2 id="highlights__content-heading">
+                        A few highlights from our menu
+                    </h2>
+                    <p id="highlights__content-paragraph">
+                        We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. 
+                        Our menu is revamped every season.
+                    </p>
+                </div>
+                <div id="highlights__items-container">
+                    <div class="highlights__item-container">
+                        <picture>
+                            <source media="(min-width: )" srcset="">
+                            <img src="./images/homepage/salmon-desktop-tablet.jpg" alt="">
+                        </picture>
+                        <div class="highlights__item-copy">
+                            <h3 class="highlights__items-heading">
+                                Seared Salmon Fillet
+                            </h3>
+                            <p class="highlights__items-paragraph">
+                                Our locally sourced salmon served with a refreshing buckwheat summer salad.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="highlights__item-container">
+                        <picture>
+                            <source media="(min-width: )" srcset="">
+                            <img src="./images/homepage/beef-desktop-tablet.jpg" alt="">
+                        </picture>
+                        <div class="highlights__item-copy">
+                            <h3 class="highlights__items-heading">
+                                Seared Salmon Fillet
+                            </h3>
+                            <p class="highlights__items-paragraph">
+                                Our locally sourced salmon served with a refreshing buckwheat summer salad.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="highlights__item-container">
+                        <picture>
+                            <source media="(min-width: )" srcset="">
+                            <img src="./images/homepage/chocolate-desktop-tablet.jpg" alt="">
+                        </picture>
+                        <div class="highlights__item-copy">
+                            <h3 class="highlights__items-heading">
+                                Seared Salmon Fillet
+                            </h3>
+                            <p class="highlights__items-paragraph">
+                                Our locally sourced salmon served with a refreshing buckwheat summer salad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>  
-    </section>
-    <section id="slider">
-      <div class="background-shape-three"></div>
-      <div class="line-graphic-two">
-        <div class="line-one line"></div>
-        <div class="line-two line"></div>
-        <div class="line-three line"></div>
-        <div class="line-four line"></div>
-        <div class="line-five line"></div>
-        <div class="line-six line"></div>
-      </div>
-      <div class="slider-container">
-        <img src="" alt="" class="slider-image">
-        <div class="slider-container-copy">
-          <h1 class="slider-container-copy-heading copy-heading"></h1>
-          <p class="slider-container-copy-paragraph copy-paragraph"></p>
-          <button class="slider-container-copy-button">BOOK A TABLE</button>
-          <ul class="slider-copy-link-container">
-            <li class="slider-copy-item">FAMILY GATHERING</li>
-            <li class="slider-copy-item">SPECIAL EVENTS</li>
-            <li class="slider-copy-item">SOCIAL EVENTS</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="footer-banner">
-      <img class="footer-banner-image" src="./images/homepage/ready-bg-desktop.jpg" alt="">
-      <h1 class="footer-banner-heading">Ready to make a reservaation?</h1>
-      <button class="footer-banner-button">BOOK A TABLE</button>
-    </section>
-    <footer id="footer">
-      <div class="footer-wrap">
-        <img src="./images/logo.svg" alt="" class="footer-logo">
-        <div class="location">
-          <p class="location-paragraph">Marthwaite, Sedbergh</p>
-          <p class="location-paragraph">Cumbria</p>
-          <p class="location-paragraph">+00 44 123 4567</p>
-        </div>
-        <div class="hours-of-operation">
-          <p class="location-paragraph">OPEN TIMES</p>
-          <p class="location-paragraph">Mon - Fri: 09:00 AM - 10:00 PM</p>
-          <p class="location-paragraph">Sat - Sun: 09:00 AM - 11:30 PM</p>
-        </div>
-      </div>
-    </footer>
-  </main>
-  <script src="app.js"></script>
+        </section>
+
+    </main>
+
+
 </body>
 </html>
-
-<!--
-  Todo:
-
-  1. replace all patterns/graphics with respective svgs
-
--->

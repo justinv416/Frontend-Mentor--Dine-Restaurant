@@ -1,0 +1,49 @@
+#highlights {
+    background-color: #111;
+    height: 761px;
+    padding: 20.75rem 17.75rem 11.25rem 15.25rem;
+
+
+    &-container {
+        height: 441px;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__content-heading {
+        color: #fff;
+        margin: 4.8rem 0 1.8rem 0;
+        font-size: 4rem;
+    }
+
+    &__content-paragraph {
+        font-size: 1.8rem;
+    }
+
+    &__content-container {
+        background-color: coral;
+        width: 44.5rem;
+    }
+}
+
+.highlights__item-container {
+    display: flex;
+    align-items: center;
+    margin-left: 12.5rem;
+}
+
+.highlights__item-copy {
+    margin-left: 3rem;
+    width: 35rem;
+}
+
+.highlights__items-heading {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.highlights__items-paragraph {
+    font-size: 1.5rem;
+}
