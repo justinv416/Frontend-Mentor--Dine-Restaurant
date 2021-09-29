@@ -91,8 +91,8 @@
                 <div id="highlights__items-container">
                     <div class="highlights__item-container">
                         <picture>
-                            <source media="(min-width: )" srcset="">
-                            <img src="./images/homepage/salmon-desktop-tablet.jpg" alt="">
+                            <source media="(max-width: 480px)" srcset="./images/homepage/salmon-mobile.jpg">
+                            <img src="./images/homepage/salmon-desktop-tablet.jpg" alt="" class="highlights__item-img">
                         </picture>
                         <div class="highlights__item-copy">
                             <h3 class="highlights__items-heading">
@@ -105,8 +105,8 @@
                     </div>
                     <div class="highlights__item-container">
                         <picture>
-                            <source media="(min-width: )" srcset="">
-                            <img src="./images/homepage/beef-desktop-tablet.jpg" alt="">
+                            <source media="(max-width: 480px)" srcset="./images/homepage/beef-mobile.jpg">
+                            <img src="./images/homepage/beef-desktop-tablet.jpg" alt="" class="highlights__item-img">
                         </picture>
                         <div class="highlights__item-copy">
                             <h3 class="highlights__items-heading">
@@ -119,8 +119,8 @@
                     </div>
                     <div class="highlights__item-container">
                         <picture>
-                            <source media="(min-width: )" srcset="">
-                            <img src="./images/homepage/chocolate-desktop-tablet.jpg" alt="">
+                            <source media="(max-width: 480px)" srcset="./images/homepage/chocolate-mobile.jpg">
+                            <img src="./images/homepage/chocolate-desktop-tablet.jpg" alt="" class="highlights__item-img">
                         </picture>
                         <div class="highlights__item-copy">
                             <h3 class="highlights__items-heading">
@@ -135,8 +135,32 @@
             </div>
         </section>
 
+        <section id="slider">
+            <!--Might interfere with JS may need to change at some point-->
+            <picture>
+                <source media="(min-width: )" srcset="">
+                <source media="(min-width: )" srcset="">
+                <img src="./images/homepage/family-gathering-desktop.jpg" alt="" id="slider__img">
+            </picture>
+            <div id="slider__content-container">
+                <h2 id="slider__content-heading">
+                    Family Gathering
+                </h2>
+                <p id="slider__content-paragraph">
+                    We love catering for entire families. So please bring everyone along for a special meal with your 
+                    loved ones. We’ll provide a memorable experience for all.
+                </p>
+                <button id="slider__content-button">BOOK A TABLE</button>
+                <p class="slider__content-link">FAMILY GATHERING</p>
+                <p class="slider__content-link">SPECIAL EVENTS</p>
+                <p class="slider__content-link">SOCIAL EVENTS</p>
+            </div>
+        </section>
+
     </main>
+    
+    <footer>
 
-
+    </footer>
 </body>
 </html>

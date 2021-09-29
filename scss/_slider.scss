@@ -1,0 +1,33 @@
+#slider {
+    display: flex;
+    padding: 160px 165px;
+    background: url(/images/patterns/pattern-curve-top-right.svg);
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: -40% 0;
+
+    &__content-container {
+        width: 57rem;
+    }
+
+    &__content-heading {
+        font-size: 4rem;
+    }
+
+    &__content-paragraph {
+        color: #111;
+        font-size: 1.8rem;
+    }
+
+    &__content-button {
+        width: 24.5rem;
+        height: 6.4rem;
+        background: none;
+        font-size: 1.4rem;
+    }
+}
+
+.slider__content-link {
+    color: #111;
+    font-size: 1.4rem;
+}
