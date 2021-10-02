@@ -261,8 +261,19 @@
   }
 }
 
+#copy-two__picture {
+  position: relative;
+}
+
+#copy-two-lines {
+  position: absolute;
+  top: 382px;
+  right: -114px;
+}
+
 #copy-two__image {
-  margin-top: 12rem;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
 }
 
 #copy-two__content-container {
@@ -552,9 +563,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+#slider__picture {
+  position: relative;
+}
+
+#slider-lines {
+  position: absolute;
+  left: -40px;
+  top: -38px;
 }
 
 .slider__content-link {
@@ -572,6 +590,73 @@
 
 .slider__content-link:nth-of-type(3) {
   margin: 1.2rem 0;
+}
+
+#footer__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer__banner-picture {
+  position: relative;
+}
+
+#footer__banner-img {
+  width: 100%;
+}
+
+#footer__banner-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+}
+
+#footer__banner-heading {
+  color: #fff;
+  font-size: 4rem;
+  margin: 0 22.6rem 0 16.5rem;
+}
+
+#footer__banner-button {
+  width: 24.5rem;
+  height: 6.4rem;
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-right: 16.5rem;
+}
+
+#footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 24rem;
+  background-color: black;
+  padding: 0 16.5rem;
+}
+
+.footer-paragraph {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  text-transform: uppercase;
 }
 
 html {

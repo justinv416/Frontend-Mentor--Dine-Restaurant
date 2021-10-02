@@ -1,0 +1,52 @@
+#footer {
+    &__banner {
+        display: flex;
+        align-items: center;
+        
+        &-picture {
+            position: relative;
+        }
+
+        &-img {
+            width: 100%;
+        }
+
+        &-content {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+        }
+
+        &-heading {
+            color: #fff;
+            font-size: 4rem;
+            margin: 0 22.6rem 0 16.5rem;
+        }
+
+        &-button {
+            width: 24.5rem;
+            height: 6.4rem;
+            background: none;
+            color: #fff;
+            border: 1px solid #fff;
+            margin-right: 16.5rem;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 24rem;
+        background-color: black;
+        padding: 0 16.5rem;
+    }
+}
+
+.footer-paragraph {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+}

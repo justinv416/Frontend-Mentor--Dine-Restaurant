@@ -17,8 +17,19 @@
         }
     }
 
+    &__picture {
+        position: relative;
+    }
+
+    &-lines {
+        position: absolute;
+        top: 382px;
+        right: -114px;
+    }
+
     &__image {
-        margin-top: 12rem;
+        // margin-top: 12rem;
+        transform: translateY(100px);
     }
 
     &__content-container {
