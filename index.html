@@ -72,8 +72,8 @@
                     <source media="(max-width: 480px)" srcset="./images/homepage/locally-sourced-mobile.jpg">
                     <source media="(max-width: 1025px)" srcset="./images/homepage/locally-sourced-tablet.jpg">
                     <img src="./images/homepage/locally-sourced-desktop.jpg" alt="" id="copy-two__image">
-                    <img src="./images/patterns/pattern-lines.svg" alt="" id="copy-two-lines">
                 </picture>
+                <!-- <img src="./images/patterns/pattern-lines.svg" alt="" id="copy-two-lines">                 -->
             </div>
         </section>
 
@@ -156,9 +156,9 @@
                     <button id="slider__content-button">BOOK A TABLE</button>
                 </div>
                 <div id="slider__content-link-container">
-                    <p class="slider__content-link">FAMILY GATHERING</p>
-                    <p class="slider__content-link">SPECIAL EVENTS</p>
-                    <p class="slider__content-link">SOCIAL EVENTS</p>
+                    <p class="slider__content-link" data-value="family-gathering">FAMILY GATHERING</p>
+                    <p class="slider__content-link" data-value="special-events">SPECIAL EVENTS</p>
+                    <p class="slider__content-link" data-value="social-events">SOCIAL EVENTS</p>
                 </div>
             </div>
         </section>
@@ -168,8 +168,8 @@
     <footer id="footer">
         <div id="footer__banner">
             <picture id="footer__banner-picture">
-                <source media="(min-width: )" srcset="">
-                <source media="(min-width: )" srcset="">
+                <source media="(max-width: 480px)" srcset="./images/homepage/ready-bg-mobile.jpg">
+                <source media="(max-width: 1025px)" srcset="./images/homepage/ready-bg-tablet.jpg">
                 <img src="./images/homepage/ready-bg-desktop.jpg" alt="" id="footer__banner-img">
             </picture>
             <div id="footer__banner-content">
@@ -193,5 +193,6 @@
             </div>
         </div>
     </footer>
+    <script src="./app.js"></script>
 </body>
 </html>
