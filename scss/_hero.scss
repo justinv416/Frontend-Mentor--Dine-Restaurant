@@ -7,13 +7,17 @@
     @media screen and (max-width: $tablet-l) {
         position: initial;
     } 
+    @media screen and (max-width: $mobile-l) {
+        max-width: 8.24rem;
+        height: 3.2rem;
+    }
 }
 
 #hero {
     width: 100%;
-    height: auto;
-    margin: auto;
-    position: relative;
+    // height: auto;
+    // margin: auto;
+    // position: relative;
 
     &__bg {
         width: 100%;
@@ -26,8 +30,8 @@
         justify-content: center;
         height: 100%;
         position: absolute;
-        left: 16.5rem;
-        top: 0rem;
+        margin-left: 16.5rem;
+        top: 0;
         // background-color: blueviolet;
 
         @media screen and (max-width: $tablet-l) {
@@ -68,13 +72,13 @@
             }
             @media screen and (max-width: $mobile-l) {
                 line-height: 4rem;
+                width: 327px;
             }
         }
 
         &__paragraph {
-            font-size: 1.8rem;
-            width: 50%;
-            // background-color: darkblue;
+            font-size: calc(1.5rem + (18 - 15) * ((100vw - 375px) / (1440 - 375)));
+            max-width: 44.5rem;
             line-height: 3rem;
             margin: 2.4rem 0 4.2rem 0;
             @media screen  and (max-width: $tablet-s) {
@@ -98,6 +102,8 @@
             font-size: 1.4rem;
             text-transform: uppercase;
             font-weight: weight(semi-bold);
+            letter-spacing: 2px;
+            margin-bottom: 12.8rem;
             &:hover {
                 background-color: #fff;
                 color: #111;

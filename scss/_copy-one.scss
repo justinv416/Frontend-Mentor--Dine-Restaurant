@@ -8,13 +8,15 @@
     background-size: 895px;
     background-repeat: no-repeat;
     background-position: 0 50%;
+    @media screen and (max-width: $mobile-l) {
+        background: none;
+    }
     
     &-container {
         // position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // background-color: lawngreen;
         height: auto;
         margin: 0 16.5rem;
         @media screen and (max-width: $tablet-l) {
@@ -47,8 +49,9 @@
 
     &__content-heading {
         color: #111;
-        font-size: 4rem;
+        font-size: calc(3.2rem + (40 - 32) * ((100vw - 375px) / (1440 - 375)));
         font-weight: 600;
+        font-weight: bolder;
     }
 
     &__content-paragraph {

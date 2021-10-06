@@ -73,7 +73,7 @@
                     <source media="(max-width: 1025px)" srcset="./images/homepage/locally-sourced-tablet.jpg">
                     <img src="./images/homepage/locally-sourced-desktop.jpg" alt="" id="copy-two__image">
                 </picture>
-                <!-- <img src="./images/patterns/pattern-lines.svg" alt="" id="copy-two-lines">                 -->
+                <img src="./images/patterns/pattern-lines.svg" alt="" id="copy-two-lines">                
             </div>
         </section>
 
@@ -138,11 +138,12 @@
 
         <section id="slider">
             <!--Might interfere with JS may need to change at some point-->
+            <!-- <img src="./images/patterns/pattern-lines.svg" alt="" id="slider-lines"> -->
             <picture id="slider__picture">
-                <source media="(min-width: )" srcset="">
-                <source media="(min-width: )" srcset="">
+                <source media="(max-width: 480px)" srcset="./images/homepage/family-gathering-mobile.jpg" id="slider__img-mobile">
+                <source media="(max-width: 1025px)" srcset="./images/homepage/family-gathering-tablet.jpg" id="slider__img-tablet">
                 <img src="./images/homepage/family-gathering-desktop.jpg" alt="" id="slider__img">
-                <img src="./images/patterns/pattern-lines.svg" alt="" id="slider-lines">
+                <!-- Lines pattern causing issues need to not contain it in picture element-->
             </picture>
             <div id="slider__content-container">
                 <div id="slider__content-wrap">

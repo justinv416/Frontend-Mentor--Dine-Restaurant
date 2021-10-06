@@ -3,6 +3,10 @@
     background-size: 895px;
     background-repeat: no-repeat;
     background-position: 100% 100%;
+    position: relative;
+    @media screen and (max-width: $mobile-l) {
+        background: none;
+    }
 
     &-container {
         display: flex;
@@ -17,14 +21,22 @@
         }
     }
 
-    &__picture {
-        position: relative;
-    }
+    // &__picture {
+    //     position: relative;
+    // }
 
     &-lines {
+        //absolute positioning causing alot of problems,
+        //may need to find another way of positioning this. 
         position: absolute;
-        top: 382px;
-        right: -114px;
+        right: 51px;
+        bottom: 282px;
+        @media screen and (max-width: $tablet-l) {
+            bottom: 504px;
+        }
+        @media screen and (max-width: $mobile-l) {
+            display: none;
+        }
     }
 
     &__image {
@@ -54,12 +66,13 @@
 
     &__content-heading {
         color: #111;
-        font-size: 4rem;
-        font-weight: 600;
+        font-size: calc(3.2rem + (40 - 32) * ((100vw - 375px) / (1440 - 375)));
+        font-weight: bolder;
     }
 
     &__content-paragraph {
-        font-size: 1.8rem;
+        font-size: calc(1.5rem + (18 - 15) * ((100vw - 375px) / (1440 - 375)));
+        line-height: 3rem;
         color: #111;
     }
 }

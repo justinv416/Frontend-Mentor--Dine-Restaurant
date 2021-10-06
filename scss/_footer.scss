@@ -26,16 +26,21 @@
 
         &-heading {
             color: #fff;
-            font-size: 4rem;
+            font-size: calc(3.2rem + (40 - 32) * ((100vw - 375px) / (1440 - 375)));
             margin: 0 22.6rem 0 16.5rem;
             @media  screen and (max-width: $tablet-l) {
                 margin: 0;
+            }
+            @media  screen and (max-width: $mobile-l) {
+                text-align: center;
             }
         }
 
         &-button {
             width: 24.5rem;
             height: 6.4rem;
+            font-size: 1.4rem;
+            letter-spacing: 2px;
             background: none;
             color: #fff;
             border: 1px solid #fff;
@@ -43,6 +48,11 @@
             @media  screen and (max-width: $tablet-l) {
                 margin: 2rem 0 0 0;
             }
+        }
+
+        &-button:hover {
+            background-color: #fff;
+            color: #111;
         }
     }
 
@@ -57,8 +67,22 @@
             // flex-direction: column;
             height: 32.8rem;
         }
+        @media screen and (max-Width: $mobile-l){
+            // flex-direction: column;
+            height: 44rem;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 0;
+        }
     }
 
+    &__contact-location {
+        text-align: center;
+    }
+
+    &__contact-hours {
+        text-align: center;
+    }
 }
 
 .footer-paragraph {

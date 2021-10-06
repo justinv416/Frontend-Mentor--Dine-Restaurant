@@ -9,6 +9,9 @@
     @media  screen and (max-width: $tablet-l) {
         flex-direction: column;
     }
+    @media screen and (max-Width: $mobile-l) {
+        background: none;
+    }
 
     &__content-container {
         width: 57rem;
@@ -22,7 +25,7 @@
     }
 
     &__content-heading {
-        font-size: 4rem;
+        font-size: calc(3.2rem + (64 - 32) * ((100vw - 375px) / (1440 - 375))); 
     }
 
     &__content-paragraph {
@@ -40,13 +43,25 @@
         height: 6.4rem;
         background: none;
         font-size: 1.4rem;
+        letter-spacing: 2px;
         margin-bottom: 7.4rem;
+        background-color: #111;
+        color: #fff;
+    }
+
+    &__content-button:hover {
+       background-color: #fff;
+       color: #111;
     }
 
     &__content-container {
         @media screen and (max-Width: $tablet-l) {
             display: flex;
             flex-direction: column-reverse;   
+        }
+        @media screen and (max-Width: $mobile-l) {
+            width: 100%;
+            max-width: 327px; 
         }
     }
 
@@ -55,6 +70,9 @@
         flex-direction: column;
         @media screen and (max-width: $tablet-l) {
             align-items: center;;
+        }
+        @media screen and (max-width: $mobile-l) {
+            width: 327px;
         }
     }
 
@@ -67,17 +85,20 @@
             max-width: 689px;
             margin: 5.6rem 0 4rem 0;
         }
+        @media screen and (max-width: $mobile-l) {
+            flex-direction: column;
+            width: 327px;
+            letter-spacing: 2px;
+        }
     }
 
-    &__picture {
-        position: relative;
-    }
+//     &__picture {
+//         z-index: 1;
+//     }
 
-    &-lines {
-        position: absolute;
-        left: -40px;
-        top: -38px;
-    }
+//     &-lines {
+//         z-index: 2;
+//     }
 }
 
 .slider__content-link {
@@ -97,5 +118,8 @@
     margin-bottom: 1.2rem;
     @media screen and (max-width: $tablet-l) {
         margin: 0;
+    }
+    @media screen and (max-width: $mobile-l) {
+        margin: 1.6rem 0;     
     }
 }
