@@ -12,6 +12,7 @@
 
         &-img {
             width: 100%;
+            transform: translateY(4px);
         }
 
         &-content {
@@ -64,12 +65,11 @@
         background-color: black;
         padding: 0 16.5rem;
         @media screen and (max-Width: $tablet-l){
-            // flex-direction: column;
-            height: 32.8rem;
+            height: 44rem;
+            flex-direction: column;
+            justify-content: space-evenly;
         }
         @media screen and (max-Width: $mobile-l){
-            // flex-direction: column;
-            height: 44rem;
             flex-direction: column;
             justify-content: space-evenly;
             padding: 0;

@@ -193,6 +193,8 @@
 #copy-one__image {
   -webkit-transform: translateY(-5rem);
           transform: translateY(-5rem);
+  -webkit-box-shadow: 0 54px 74px -50px #5c6779;
+          box-shadow: 0 54px 74px -50px #5c6779;
 }
 
 #copy-one__content-container {
@@ -303,6 +305,8 @@
 #copy-two__image {
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
+  -webkit-box-shadow: 0 54px 74px -50px #5c6779;
+          box-shadow: 0 54px 74px -50px #5c6779;
 }
 
 #copy-two__content-container {
@@ -572,6 +576,11 @@
   }
 }
 
+#slider__img {
+  -webkit-box-shadow: 0 54px 74px -50px #5c6779;
+          box-shadow: 0 54px 74px -50px #5c6779;
+}
+
 #slider__content-container {
   width: 57rem;
   margin-left: 12.4rem;
@@ -700,6 +709,7 @@
 .slider__content-link {
   color: #111;
   font-size: 1.4rem;
+  position: relative;
 }
 
 @media screen and (max-width: 1025px) {
@@ -712,6 +722,25 @@
 
 .slider__content-link:hover {
   font-weight: bold;
+}
+
+.slider__content-link:hover::after {
+  content: '';
+  background-color: #9e7f66;
+  width: 95px;
+  height: 1px;
+  position: absolute;
+  left: -125px;
+  bottom: 10px;
+}
+
+@media screen and (max-width: 1025px) {
+  .slider__content-link:hover::after {
+    width: 48px;
+    top: 20px;
+    bottom: 0;
+    left: 45px;
+  }
 }
 
 .slider__content-link:nth-of-type(2) {
@@ -750,6 +779,8 @@
 
 #footer__banner-img {
   width: 100%;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
 }
 
 #footer__banner-content {
@@ -831,13 +862,19 @@
 
 @media screen and (max-Width: 1025px) {
   #footer__contact {
-    height: 32.8rem;
+    height: 44rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
 @media screen and (max-Width: 480px) {
   #footer__contact {
-    height: 44rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
