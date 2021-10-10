@@ -126,6 +126,7 @@
     position: absolute;
     left: -125px;
     bottom: 10px;
+    animation: growX .5s forwards;
     @media screen and (max-width: $tablet-l) {
         width: 48px;
         top: 20px;
@@ -142,5 +143,13 @@
     }
     @media screen and (max-width: $mobile-l) {
         margin: 1.6rem 0;     
+    }
+}
+
+@keyframes growX {
+    from {
+        width: 0px;
+    } to {
+        width: 95px;
     }
 }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="./scss/main.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Dine Restaurant Reservation</title>
+</head>
+<body>
+    
+    <header id="reservation">
+        <picture>
+            <source media="(max-width: 480px)" srcset="./images/booking/hero-bg-mobile.jpg">
+            <source media="(max-width: 1025px)" srcset="./images/booking/hero-bg-tablet.jpg">
+            <img src="./images/booking/hero-bg-desktop.jpg" alt="" id="reservation__img">
+        </picture>
+        <a href="./index.html"><img src="./images/logo.svg" alt="" id="reservation__logo"></a>
+        <div id="reservation__content">
+            <h1 id="reservation__content-heading">
+                Reservations
+            </h1>
+            <p id="reservation__content-copy">
+                We can’t wait to host you. 
+                If you have any special requirements please feel free to call on the phone number below. 
+                We’ll be happy to accommodate you.
+            </p>
+        </div>
+        <form action="" id="reservation__form">
+            <input type="text" id="reservation__form-name" placeholder="Name">
+            <input type="email" id="reservation__form-email" placeholder="Email">
+            <div id="reservation__form-date-container">
+                <span>Pick a date</span>
+                <input id="reservation__form-date-month" type="number" min="1" max="12" inputmode="numeric" placeholder="MM">                
+                <input id="reservation__form-date-day" type="number" min="1" max="31" inputmode="numeric" placeholder="DD">                
+                <input id="reservation__form-date-year" type="number" min="2021" max="3000" inputmode="numeric" placeholder="YYYY">                
+            </div>
+            <div id="reservation__form-time-container">
+                <span>Pick a time</span>
+                <input id="reservation__form-time-hour" type="number" min="01" max="12" inputmode="numeric" placeholder="09">                
+                <input id="reservation__form-time-minute" type="number" min="00" max="59" inputmode="numeric" placeholder="00"> 
+                <select name="" id="reservation__form-time-period">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>              
+            </div>            
+            <input type="number" id="reservation__form-number">
+            <input type="submit" id="reservation__form-submit" value="MAKE RESERVATION">
+        </form>
+    </header>
+    
+    <main>
+        <section id="background">
+            <img src="./images/patterns/pattern-lines.svg" alt="" id="background__lines">
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div id="footer__contact">
+            <img src="./images/logo.svg" alt="">
+            <div id="footer__contact-location">
+                <p class="footer-paragraph">Marthwaite, Sedbergh</p>
+                <p class="footer-paragraph">Cumbria</p>
+                <p class="footer-paragraph">+00 44 123 4567</p>
+            </div>
+            <div id="footer__contact-hours">
+                <p class="footer-paragraph">Open Times</p>
+                <p class="footer-paragraph">Mon - Fri: 09:00 AM - 10:00 PM</p>
+                <p class="footer-paragraph">Sat - Sun: 09:00 AM - 11:30 PM</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
