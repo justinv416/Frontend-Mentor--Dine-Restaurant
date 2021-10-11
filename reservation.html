@@ -31,8 +31,8 @@
             </p>
         </div>
         <form action="" id="reservation__form">
-            <input type="text" id="reservation__form-name" placeholder="Name">
-            <input type="email" id="reservation__form-email" placeholder="Email">
+            <input type="text" id="reservation__form-name" placeholder="Name" required>
+            <input type="email" id="reservation__form-email" placeholder="Email" required>
             <div id="reservation__form-date-container">
                 <span>Pick a date</span>
                 <input id="reservation__form-date-month" type="number" min="1" max="12" inputmode="numeric" placeholder="MM">                
@@ -48,7 +48,15 @@
                     <option value="PM">PM</option>
                 </select>              
             </div>            
-            <input type="number" id="reservation__form-number">
+            <div id="reservation__form-partySize">
+                <span id="minus">
+                    <img src="./images/icons/icon-minus.svg" alt="" id="minus-icon">
+                </span>
+                <strong id="people"><span id="number"></span> People</strong>
+                <span id="plus">
+                    <img src="./images/icons/icon-plus.svg" alt="" id="plus-icon">
+                </span>
+            </div>
             <input type="submit" id="reservation__form-submit" value="MAKE RESERVATION">
         </form>
     </header>
@@ -74,6 +82,6 @@
             </div>
         </div>
     </footer>
-
+<script src="app.js"></script>
 </body>
 </html>

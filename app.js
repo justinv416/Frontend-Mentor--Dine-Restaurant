@@ -4,6 +4,9 @@ const sliderParagraph = document.querySelector('#slider__content-paragraph');
 const sliderImg = document.querySelector('#slider__img');
 const sliderImgTablet = document.querySelector('#slider__img-tablet');
 const sliderImgMobile = document.querySelector('#slider__img-mobile');
+const minusIcon = document.querySelector('#minus-icon');
+const plusIcon = document.querySelector('#plus-icon');
+const numOutput = document.querySelector('#number');
 
 const sliderContent = [
     `We love catering for entire families. So please bring everyone along for a special meal with your 
@@ -54,6 +57,25 @@ sliderLinks.forEach(link => link.addEventListener('click', () =>{
        sliderImgMobile.srcset = sliderImages[2][2];
    }
 }));
+
+let currentNum = 1;
+numOutput.textContent = `${currentNum}`;
+
+minusIcon.addEventListener('click', () => {
+    currentNum--;
+    if(currentNum < 1) {
+        currentNum = 1;
+    }
+    console.log(currentNum)
+    numOutput.textContent = `${currentNum}`;
+});
+plusIcon.addEventListener('click', () => {
+    currentNum++;
+    console.log(currentNum)
+    numOutput.textContent = `${currentNum}`;
+});
+
+
 
 /* TODO:
 

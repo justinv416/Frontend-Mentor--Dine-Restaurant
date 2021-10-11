@@ -6,7 +6,7 @@
 }
 
 .logo {
-  width: 10.3rem;
+  max-width: 10.3rem;
   height: 4rem;
   position: absolute;
   top: 6.5rem;
@@ -25,26 +25,17 @@
   }
 }
 
-#hero {
+#hero__bg {
   width: 100%;
 }
 
-#hero__bg {
-  width: 100%;
-  z-index: -1;
+@media screen and (max-width: 1025px) {
+  #hero__bg {
+    width: 100%;
+  }
 }
 
 #hero__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: absolute;
   margin-left: 16.5rem;
   top: 0;
@@ -1064,6 +1055,22 @@
   letter-spacing: 2px;
 }
 
+#reservation__form-submit:hover {
+  background-color: #fff;
+  color: #111;
+}
+
+#reservation__form-partySize {
+  width: 44.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 1px solid #8E8E8E;
+  padding-bottom: 1.7rem;
+}
+
 #background {
   background: url(/images/patterns/pattern-curve-bottom-right.svg);
   background-repeat: no-repeat;
@@ -1087,6 +1094,10 @@
 }
 
 span {
+  font-size: 1.8rem;
+}
+
+#people {
   font-size: 1.8rem;
 }
 

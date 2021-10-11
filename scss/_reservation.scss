@@ -114,6 +114,19 @@
             font-size: 1.4rem;
             letter-spacing: 2px;
         }
+
+        &-submit:hover {
+            background-color: #fff;
+            color: #111;
+        }
+
+        &-partySize {
+            width: 44.4rem;
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid #8E8E8E;
+            padding-bottom: 1.7rem;
+        }
     }
 }
 
@@ -136,5 +149,9 @@
 }
 
 span {
+    font-size: 1.8rem;
+}
+
+#people {
     font-size: 1.8rem;
 }
