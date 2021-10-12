@@ -53,15 +53,9 @@
             margin-top: 5.6rem;
             transform: translateY(0);
         }
-        // @media screen and (max-width: $mobile-l) {
-        //     display: flex;
-        //     flex-direction: column;
-        // }
     }
 
 }
-
-
 
 #highlights__items-container > div:nth-of-type(2) {
     margin-top: 4.9rem;
@@ -94,10 +88,6 @@
         width: 327px;
     }
 }
-
-// .highlights__item-img {
-//     position: relative;
-// }
 
 //Broken need to fix
 .highlights__item-img::after {

@@ -77,11 +77,15 @@
     }
 
     &__contact-location {
-        text-align: center;
+        @media screen and (max-width: $tablet-l) {
+            text-align: center;
+        }
     }
 
     &__contact-hours {
-        text-align: center;
+        @media screen and (max-width: $tablet-l) {
+            text-align: center;
+        }
     }
 }
 
